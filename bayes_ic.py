@@ -1,3 +1,9 @@
+import numpy as np
+import pandas as pd
+import pymc3 as pm
+from pymc3.distributions.timeseries import *
+from theano.tensor import repeat
+
 class BayesIC(object):
     
     def __init__(self, signal, target):
